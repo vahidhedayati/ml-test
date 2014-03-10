@@ -1,4 +1,4 @@
-ml-test Grails 2.3.4 testing application for mailinglist plugin 
+ml-test Grails mailinglist plugin 
 =======================
 
 ### https://github.com/vahidhedayati/mailinglist/
@@ -180,4 +180,7 @@ Followed by
  	grails run-app
  	
  The url is now available http://localhost:8080/ml-test	
+ 
+ For further documentation please visit the main plugin page here https://github.com/vahidhedayati/mailinglist
+
  

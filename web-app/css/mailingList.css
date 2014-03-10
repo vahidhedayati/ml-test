@@ -1,0 +1,420 @@
+.internalbtn{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-bottom:0;
+	text-align:center;
+	vertical-align:middle;
+	color:#333333;
+	text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);
+	background-color:#f5f5f5;
+	background-image:-moz-linear-gradient(top, #ffffff, #e6e6e6);
+	text-decoration: none;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image:-webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image:-o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image:linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	border-color:#e6e6e6 #e6e6e6 #bfbfbf;
+	border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color:#e6e6e6;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border:1px solid #bbbbbb;
+	*border:0;border-bottom-color:#a2a2a2;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	*margin-left:.3em;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.internalbtn:hover,.internalbtn:active,.internalbtn.active,.internalbtn.disabled,.internalbtn[disabled]{
+	color:#333333;
+	background-color:#FFF;
+	*background-color:#FFCCFF;
+	text-decoration: none;
+}
+
+
+.internalbtn:active,.internalbtn.active{
+	background-color:#cccccc;
+}
+
+.internalbtn ul {
+	list-style-type:none;
+}
+
+.internalbtn a {
+	text-decoration: none;
+}
+
+.internalbtn a:hover {
+	background-color:#FFF;*background-color:#FFF;
+	color: #FF0000;
+}
+
+.app-detail {
+	float: left;
+	width: 320px;
+	height: auto;
+	margin-right: 2px;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+.app-detail a:hover {
+	text-decoration:none
+}
+.app-detail a {
+	color: rgb(0, 0, 153);
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;	
+}
+.app-detail h1 {
+	font-size: 2em;	
+}
+
+#the_box {
+	z-index: 0;
+}
+
+#the_box ul {
+	list-style-type:none;
+}
+
+#the_box  li {
+	list-style-type:none;
+	float: left;
+	width: 25em;
+	min-height: 15em;
+	background: rgba(255,255,255,0.75);
+	margin: 0.1em 0.5em 0.1em 0.1em;
+	padding: 0.31em 0.7em 0.31em 0.7em;
+	z-index: 0;
+}
+
+#the_box h2 {
+	font-size: 1.2em;
+	line-height: 22px;
+	margin: 0 0 10px 0;
+}
+
+.box_header {
+ 	padding-top: 1em;
+  	font-weight: 600;
+  	color: #000000;
+  	background-color: #CCCCCC;
+  	text-align: center;
+  	height: 35px;
+}
+
+.box_text {
+  	text-align: left;
+}
+
+#scheduler-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/scheduler.png) no-repeat top right;
+    float: right;
+}
+
+#attachment-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/Email-Attachment.png) no-repeat top right;
+    float: right;
+}
+
+#templates-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/templates.png) no-repeat top right;
+    float: right;
+}
+#mailinglistcat-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/mailing-categories.png) no-repeat top right;
+    float: right;
+}
+
+#mailinglist-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/mailing-list.png) no-repeat top right;
+    float: right;
+}
+
+#mailinglistsenders-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/email_sender.jpg) no-repeat top right;
+    float: right;
+}
+
+#csv-logo {
+	width: 100%;
+    height: 64px;
+    background: #ccc url(../images/mailingList/csv-import.png) no-repeat top right;
+    float: right;
+}
+
+#scheduled-email-logo {
+	width: 100%;
+    height: 64px;
+    background: #AAA url(../images/mailingList/scheduler.png) no-repeat bottom right;
+    float: right;
+}
+
+#boxbtn {
+	margin-top: 0px;
+	padding:1px;
+	border:1px;
+	color: #333;
+	font-size: 0.7em;
+
+	background-color: transparent;
+	box-shadow:
+        inset 0 2px 3px rgbargba(248, 248, 248, 1),
+        inset 0 -2px 3px rgbargba(248, 248, 248, 1),
+        0 1px 1px rgbargba(248, 248, 248, 1);
+}
+.clearall{
+     clear: both;
+}
+
+
+/* Contact Area for emailing */
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-size: 1.1em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+
+.tab_opt{
+	margin:0 0 15px 0;
+	border-bottom:1px solid #cfcfcf;
+	text-align:right;
+	padding-right:10px
+}
+
+.tab_opt li{
+	margin:0 5px -1px 0;
+	vertical-align:bottom;
+	display:inline-block;
+}
+
+.tab_opt a{
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	border:1px solid #c0c0c0;
+	display:block;
+	background-color:#ececec;
+	padding:0 10px;
+	line-height:24px;
+	color:#333;
+}
+
+.tab_opt a:hover{
+	background-color:#ff0000;
+	color:white
+}
+
+.tab_opt a.active{
+	border-bottom-color:white;
+	background-color:white;
+	line-height:26px;
+	color:black
+}
+
+.tab_opt a.highlight{
+	color:red
+}
+
+.tabBar{
+	margin-top: -27px;
+	margin-bottom:15px;
+	border-bottom:1px solid #ff0079;
+	padding-right:10px;
+	text-align:right
+}
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+#nav{
+	list-style:none;
+	font-weight:bold;
+	/* Clear floats */
+	float:left;
+	width: auto;
+	border-radius: 61px 61px 61px 61px;
+	background: linear-gradient(top, #efefef 0%, #444444 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #444444 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#444444 100%); 
+	box-shadow: 0px 0px 9px rgba(99,99,99,99);
+	/*z-index:3080;*/
+	padding: 0.3em 0.3em 0.3em 0.3em;
+	margin: 0.6em 0.1em 0 0.5em;
+	/* Bring the nav above everything else--uncomment if needed.
+	position:relative;
+	z-index:5;
+	
+	*/
+}
+#nav li{
+	float:left;
+	margin-right:10px;
+	position:relative;
+	/*z-index:3080;*/
+		border-radius: 61px 61px 61px 61px;
+}
+
+#nav .present { 
+	display:block;
+	padding:5px;
+	color:#fff;
+	background: #800000;
+	text-decoration:none;
+	/*z-index:3080;*/
+	border-radius: 61px 61px 61px 61px;
+}
+	
+#nav a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#333;
+	text-decoration:none;
+	/*z-index:3080;*/
+	border-radius: 61px 61px 61px 61px;
+}
+#nav a:hover #nav .present:hover{
+	color:#fff;
+	background:#6b0c36;
+	text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	
+	
+	
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,1);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	
+	display: inline-table;
+	border-radius: 10px 10px 10px 10px;
+	z-index:300;
+		
+}
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+/*z-index:3080;*/
+	border-radius: 10px 10px 10px 10px;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	text-decoration:none;
+/*z-index:3080;*/
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+/*z-index:3080;*/
+}
+#nav li:hover a{ 
+background:#FFF; 
+	background:rgba(255,255,255,0); 
+	color: #0000FF;
+	text-decoration:none;
+/*z-index:3080;*/
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+z-index:3080;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+	z-index: 2951;
+	color: #FF0000;
+	text-decoration:none;
+}
+#nav3 {
+	display: inline-block;
+	/*z-index:3080;*/
+}	
+.nav3 {
+    display: inline-block;
+	width: 100%;
+	/*z-index:3080;*/
+	padding-top: 2em;
+}	
+
+.tbutton {
+	border: 1px solid rgba(0,0,0,0.2);
+	box-sizing: content-box !important;
+	color: #333;
+	width: auto;
+	display: inline-block;
+    *zoom: 1;
+    *display: inline;
+	padding: 0.01em 0.02em;
+	text-align: center;
+	/*text-shadow: 0 0 5px rgba(0,0,0,0.2), 0 0 1px rgba(0,0,0,0.4);*/
+	text-decoration: none;
+
+	white-space: normal;
+	outline: none; 
+	/* Transition */
+	-moz-transition: all 200ms ease 0ms !important;
+	-o-transition: all 200ms ease 0ms !important;
+	-webkit-transition: all 200ms ease 0ms !important;
+	/* Background Color */
+	background: none repeat scroll 0 0 rgba(255,255,255,0.04);
+	/* Border Rounding */
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	/* Background Clipping */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;
+	/* Shadow */
+	box-shadow: 0 0 3px rgba(255,255,255,0.25) inset, 0 0 1px rgba(255,255,255,0.2), 0 10px 10px rgba(255,255,255,0.08) inset;
+	-moz-box-shadow: 0 0 3px rgba(255,255,255,0.25) inset, 0 0 1px rgba(255,255,255,0.2), 0 10px 10px rgba(255,255,255,0.08) inset;
+	-webkit-box-shadow: 0 0 3px rgba(255,255,255,0.25) inset, 0 0 1px rgba(255,255,255,0.2), 0 10x 10px rgba(255,255,255,0.08) inset;
+	box-shadow: 0 0 3px rgba(255,255,255,0.25) inset, 0 0 1px rgba(255,255,255,0.2), 0 10px 10px rgba(255,255,255,0.08) inset;
+}
