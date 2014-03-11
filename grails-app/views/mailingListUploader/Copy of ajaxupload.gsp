@@ -1,7 +1,7 @@
 <html>
 	<head>
 	
-			<meta name='layout' content="main"/>
+			<meta name='layout' content="mailingListMini"/>
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mailingList.css')}" type="text/css">
 		
     	<g:set var="entityName" value="${message(code: 'MailingListSchedule.label', default: 'MailingList Schedule')}" />
@@ -28,7 +28,7 @@ The fields must be in the above format and the first line must be a heading sinc
 
 </p>
 
-<g:uploadForm   controller="MailingListUploader" action="upload">
+<g:uploadForm  name="${params?.formId }" id="1" id="1" controller="MailingListUploader" action="upload">
 <g:hiddenField name="ajax" value="yes"/>
 <div class="fieldcontain ${hasErrors(bean: params, field: 'catname', 'error')} ">
 	<label for="catname">
@@ -46,6 +46,39 @@ The fields must be in the above format and the first line must be a heading sinc
     <g:submitButton name="upload" value="Upload" />
 </g:uploadForm>
 
+${params.formId } --  ${params.controller }
+			
+<g:javascript>
+
+
+	$('#MailingListUploader').submit(function() {
+ 		$.ajax({ 
+        	data: $(this).serialize(), 
+        	type: $(this).attr('method'),
+        	url: $(this).attr('action'), 
+        	success: function(response) { 
+            	$('#MailingListUploader').html(response); 
+            	${controller}CloseModal(); 
+        	}
+    	});
+    	return false; 
+	});		
+	function ${controller}CloseModal() {
+		$('#BuildModal${id}').dialog().dialog('close');
+  		$(".modal-backdrop").hide();
+  		<g:if test="${!disablecheck.equals('true') }">
+			var controller="${controller }";
+			var divId="${divId }";
+			$.get('${createLink(controller:"MailingListEmail", action: "getAjaxCall")}?ccontroller='+controller+'&divId='+divId,function(data){
+				$('#${divId}').hide().html(data).fadeIn('slow');
+			});
+		</g:if>	
+	}
+</g:javascript>
+
+
 
 </body>
 </html>
+
+
