@@ -49,7 +49,6 @@ So above r:layoutResources and below Application are two new java script calls t
 #### conf/BuildConfig.groovy
 
 	compile ':mailinglist:0.1'
-	## Only when it goes live (this is how to)
 	
 #### conf/UrlMappings.groovy
 
