@@ -45,13 +45,21 @@
  		<g:javascript>
  	 		var myClonemailerTemplates
  	 		function runTemplatesCheck() {
- 	 			myClonemailerTemplates=$('#mailerTemplates1').clone();   
+ 	 			if (!myClonemailerTemplates) {
+ 	 			myClonemailerTemplates=$('#mailerTemplates1').clone();
+ 	 			}
+ 	 	 		
+ 	 		   
  	 	 		$('#mailerTemplates1').show();
  	 		}
  	 	</g:javascript>
+ 	 	
  	 	<div id="mailerTemplates1">
+		
  			<g:render template="/mailingListModal/modalbasicSelfPost" model="[formId:'TemplatesForm', title:'Generate Template',controller: 'mailingListTemplates', callPage: 'formAjax' , divId: 'mailerTemplates', id: 'TEMPLATES']" />
  		</div>
+ 			
+ 		
  	</div>
  	
  	
