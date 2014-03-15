@@ -6,6 +6,7 @@ ml-test Grails mailinglist plugin
 This project is created to show how to put together the above grails plugin.
 
 
+## Expert user advice :
 Once you have grails up and running (This was done in 2.3.4 with ggts version 3.5.0.M1)
 
 All you will need to test using this project is grails 2.3.4
@@ -21,10 +22,43 @@ Then
 	# with your console able to find grails 2.3.4 binary run
 
 run
+
 	grails run-app
+
 	
 You should now be able to test the plugin 
 
+## N00b Guide to getting started
+
+No offence intended, its just after speaking to a few friends they wanted to try out possibly this project or even their own grails test.
+
+So the best way to go about getting this project within your workspace step by step:
+
+
+1. Download JDK 1.6 1.7. 
+
+1.1 Test 1. open a console or command run :
+
+java -version
+
+if this returns JDK  1.6 or 7 it is already installed and all good if not look for it download it install it on which ever OS on windows then look http://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html look at instructions about environment path and get this all set up
+
+Then download GGTS https://spring.io/tools/ggts/all probably worth getting GGTS 3.5.0.M2 4.3.1  
+
+Install this - open it up
+
+Create some workspace now cd into this workspace then move out of there open a command terminal or console if you have git run:
+
+
+git clone https://github.com/vahidhedayati/ml-test.git
+
+if not try https://github.com/vahidhedayati/ml-test/archive/master.zip downloading the zip - once downloaded unzip it now move the folder or rename it to ml-test
+
+Once this is done within your newly created workspace back inside ggts goto file new grails project and type in ml-test this will then create the project withing your GUI and bind it with the existing data you have put there.
+
+All done - now you can play around - press play etc.
+
+Once completed open up 
 
 To recreate this project, the following changes were made to a default grails project :
 
