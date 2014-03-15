@@ -35,7 +35,7 @@ No offence intended, its just after speaking to a few friends they wanted to try
 So the best way to go about getting this project within your workspace step by step:
 
 
-1. Download JDK 1.6 1.7. 
+1. Download JDK 1.6 /  1.7. 
 
 1.1 Test 1. open a console or command run :
 
@@ -47,10 +47,14 @@ Then download GGTS https://spring.io/tools/ggts/all probably worth getting GGTS 
 
 Install this - open it up
 
-Create some workspace now cd into this workspace then move out of there open a command terminal or console if you have git run:
+Create some workspace either quit or move it out of the way 
+
+
+open a command terminal or console if you have git run:
 
 
 git clone https://github.com/vahidhedayati/ml-test.git
+
 
 if not try https://github.com/vahidhedayati/ml-test/archive/master.zip downloading the zip - once downloaded unzip it now move the folder or rename it to ml-test
 
@@ -59,6 +63,12 @@ Once this is done within your newly created workspace back inside ggts goto file
 All done - now you can play around - press play etc.
 
 Once completed open up 
+
+
+
+
+
+### RECREATE PROJECT IN A NEW PROJECT
 
 To recreate this project, the following changes were made to a default grails project :
 
