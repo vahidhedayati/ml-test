@@ -6,16 +6,11 @@ class UrlMappings {
                 // apply constraints here
             }
         }
-
-		
 		"/" {
 			controller = "MailingList"
 			action = "index"
-		 }
-		
+		}
         //"/"(view:"/index")
-		
-		
         "500"(view:'/error')
 	}
 }

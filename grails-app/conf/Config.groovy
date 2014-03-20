@@ -114,6 +114,19 @@ log4j = {
            'net.sf.ehcache.hibernate'
 }
 
+// Optional values to override DB table names for this plugin:
+//mailinglist.table.schedule='MyScheduler'
+//mailinglist.table.attachments='something'
+//mailinglist.table.categories='something'
+//mailinglist.table.from='something'
+//mailinglist.table.mailinglist='something'
+//mailinglist.table.schedule='something'
+//mailinglist.table.senders='something'
+//mailinglist.table.templates='something'
+
+// Your date format that matches input of jquery datepicker config
+//mailinglist.dtFormat='dd/MM/yyyy HH.mm'
+
 
 ckeditor {
 	//config = "/js/myckconfig.js"
@@ -121,7 +134,6 @@ ckeditor {
 	defaultFileBrowser = "ofm"
 	upload {
 		//basedir = "/uploads/"
-		
 		baseurl="${grails.baseURL}"+'/uploads/'
 		basedir = "${externalUploadPath}"
 			overwrite = false
@@ -130,7 +142,7 @@ ckeditor {
 				upload = false
 				allowed = []
 				denied = ['html', 'htm', 'php', 'php2', 'php3', 'php4', 'php5',
-						  'phtml', 'pwml', 'inc', 'asp', 'aspx', 'ascx', 'jsp',
+							  'phtml', 'pwml', 'inc', 'asp', 'aspx', 'ascx', 'jsp',
 						  'cfm', 'cfc', 'pl', 'bat', 'exe', 'com', 'dll', 'vbs', 'js', 'reg',
 						  'cgi', 'htaccess', 'asis', 'sh', 'shtml', 'shtm', 'phtm']
 			}
@@ -148,7 +160,6 @@ ckeditor {
 			}
 	}
 }
-
 jqueryDateTimePicker {
 	format {
 		java {
@@ -179,5 +190,3 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
 	form: 'application/x-www-form-urlencoded',
 	multipartForm: 'multipart/form-data'
   ]
-
-
